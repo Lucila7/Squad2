@@ -1,11 +1,17 @@
-#Criando uma calculadora utilizando match/case
+#Atividade de criação de uma calculadora utilizando match/case
 
+nome = input("Nome de usuário: ")
+
+conta = input("Defina se quer: + somar,  - subtrair, * multiplicar ou / dividir: ")
 #solicitando os valores para o cálculo.
-n1 = float(input("Digite o primeiro número: "))
-n2 = float(input("Digite o segundo número: "))
+valor1 = float(input("Digite o primeiro número: "))
+valor2 = float(input("Digite o segundo número: "))
 
-operacao = input("Digite a operação (+, -, *, /): ")
-
-match operacao:
+#Calculando a operação escolhida
+match conta:
     case "subtracao" | "Subtracao" | "SUBTRACAO" | "":
-        print(f"O resultado da subtração entre {n1} e {n2} é: {n1 - n2}")
+        print(f"O resultado da subtração entre {valor1} e {valor2} é: {valor1 - valor2}")
+
+
+
+
